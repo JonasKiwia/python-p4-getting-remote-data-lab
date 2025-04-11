@@ -7,7 +7,7 @@ class GetRequester:
 
     def get_response_body(self):
         response = requests.get(self.url)
-        return response.content  # Returns bytes
+        return response.content  
 
     def load_json(self):
         body = self.get_response_body()
